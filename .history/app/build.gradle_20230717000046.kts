@@ -81,9 +81,10 @@ dependencies {
     implementation("io.noties.markwon:core:4.6.2")
 
     val vLibsu = "5.0.4"
-    implementation("com.github.4accccc.libsu:core:5.0.5")
-    implementation("com.github.4accccc.libsu:service:5.0.5")
-    implementation("com.github.4accccc.libsu:nio:5.0.5")
+    implementation("com.github.topjohnwu.libsu:core:${vLibsu}")
+    implementation("com.github.topjohnwu.libsu:service:${vLibsu}")
+    implementation("com.github.topjohnwu.libsu:nio:${vLibsu}")
+
     val vRetrofit = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:${vRetrofit}")
     implementation("com.squareup.retrofit2:converter-moshi:${vRetrofit}")

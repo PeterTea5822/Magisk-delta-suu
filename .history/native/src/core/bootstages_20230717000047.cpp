@@ -736,9 +736,7 @@ static void post_fs_data() {
         LOGE(SECURE_DIR " is not present, abort\n");
         goto early_abort;
     }
-    if (MAGISKTMP != "/sbin") {
-        exec_command_sync("/system/bin/mount", "--bind", MAGISKTMP.data(), "/product/bin");
-    }
+
     if (!magisk_env()) {
         LOGE("* Magisk environment incomplete, abort\n");
         goto early_abort;

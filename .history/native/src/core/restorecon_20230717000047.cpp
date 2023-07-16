@@ -87,7 +87,7 @@ void restore_tmpcon() {
     if (MAGISKTMP == "/sbin")
         setfilecon(MAGISKTMP.data(), ROOT_CON);
     else
-        chmod(MAGISKTMP.data(), 0755);
+        chmod(MAGISKTMP.data(), 0700);
 
     auto dir = xopen_dir(MAGISKTMP.data());
     int dfd = dirfd(dir.get());
