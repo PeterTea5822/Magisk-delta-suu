@@ -2,7 +2,7 @@ name: Magisk Build
 
 on:
   push:
-    branches: [ delta ]
+    branches: [ master ]
     paths:
       - 'app/**'
       - 'native/**'
@@ -12,7 +12,7 @@ on:
       - 'gradle.properties'
       - '.github/workflows/build.yml'
   pull_request:
-    branches: [ delta ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
