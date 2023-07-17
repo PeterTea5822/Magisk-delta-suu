@@ -97,9 +97,9 @@ jobs:
           name: ${{ github.sha }}
           path: out
       
-       - name: Create GitHub release
-         uses: marvinpinto/action-automatic-releases@latest
-         with:
+      - name: Create GitHub release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
            repo_token: "${{ secrets.GITHUB_TOKEN }}"
            automatic_release_tag: ${{ env.ReleaseVersion }}
            title: ${{ env.ReleaseVersion }}
